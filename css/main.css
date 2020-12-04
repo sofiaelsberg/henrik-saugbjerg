@@ -1,0 +1,296 @@
+/* ---------- root variables ---------- */
+:root {
+  --nude:#e6e3d6;
+  --beige:#b1a79c;
+  --brown: #48453a;
+  --text-color-light: #575757;
+  --text-color-dark: #333;
+}
+
+/* ---------- general styling ---------- */
+html {
+  color: var(--text-color-dark);
+  font-family: 'Montserrat', Arial, sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-size: 62px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-size: 49px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+h3 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+p {
+font-size: 14px;
+letter-spacing: 0.25px;
+}
+
+p {
+font-size: 16px;
+letter-spacing: 0.5px;
+color: var(--text-color-light);
+}
+
+button {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+}
+
+/* ---------- tabbar styling ---------- */
+.tabbar {
+  background-color: var(--nude);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  text-align: right;
+}
+
+/* Style the links inside the navigation bar */
+.tabbar a {
+  display: inline-block;
+  color: var(--text-color-light);
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Change the color of links on hover */
+.tabbar a:hover {
+  background-color: var(--light-grey);
+  color: var(--text-color-dark);
+}
+
+/* Add a color to the active/current link */
+.tabbar a.active {
+  /* background-color: var(--brown); */
+  color: black;
+}
+
+
+/* ---------- footer styling ---------- */
+
+
+.site-footer
+{
+  background-color: var(--beige);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#fff;
+   list-style: none;
+}
+
+.container-top {
+display: flex;
+flex-direction: row;
+}
+
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5;
+}
+.site-footer hr.small
+{
+  margin: 20px 0;
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a
+{
+  text-decoration: none;
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration: none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style: none;
+}
+.footer-links li
+{
+  display: block;
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+
+.social-icons a.instagram:hover
+{
+  background-color:#007bb6
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+/* ---------- page styling ---------- */
+.page {
+  display: none;
+  /*min heigh is screen heigh minus height of tab and top bar */
+  min-height: calc(100vh - 110px);
+  background: var(--light-grey);
+  animation: fadeIn 0.4s;
+  /* padding equals height of tabbar and topbar */
+  padding: 55px 0;
+}
+
+/* ---------- logo styling ---------- */
+.logo {
+  margin: 2em auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
