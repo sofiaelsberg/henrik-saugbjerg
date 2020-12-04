@@ -62,21 +62,12 @@ button {
 /* ---------- tabbar styling ---------- */
 .tabbar {
   background-color: var(--nude);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  text-align: right;
+
 }
 
 /* Style the links inside the navigation bar */
 .tabbar a {
-  display: inline-block;
   color: var(--text-color-light);
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -84,16 +75,16 @@ button {
 }
 
 /* Change the color of links on hover */
-.tabbar a:hover {
+/* .tabbar a:hover {
   background-color: var(--light-grey);
   color: var(--text-color-dark);
-}
+} */
 
 /* Add a color to the active/current link */
-.tabbar a.active {
-  /* background-color: var(--brown); */
+/* .tabbar a.active {
+  background-color: var(--brown);
   color: black;
-}
+} */
 
 
 /* ---------- footer styling ---------- */
