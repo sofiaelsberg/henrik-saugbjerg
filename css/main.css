@@ -105,14 +105,10 @@ button {
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#fff;
+  color: var(--text-color-light);
    list-style: none;
 }
 
-.container-top {
-display: flex;
-flex-direction: row;
-}
 
 .site-footer hr
 {
@@ -150,10 +146,10 @@ flex-direction: row;
 {
   display: block;
 }
-.footer-links a
+/* .footer-links a
 {
   color:#737373
-}
+} */
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
   color:#3366cc;
