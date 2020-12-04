@@ -87,6 +87,32 @@ button {
 } */
 
 
+/* ---------- front page styling ---------- */
+.front-page-intro {
+  margin-right: 100px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.grid-parent {
+ display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 25% 25% 25% 25%;
+  gap: 0px 0px;
+  width: 100%;
+}
+#nude-box { grid-area: 1 / 3 / 2 / 4; }
+#jewl-preview { grid-area: 1 / 2 / 2 / 4; }
+#beige-box { grid-area: 2 / 1 / 3 / 2; }
+#workshop-preview { grid-area: 2 / 1 / 3 / 3; }
+#brown-box { grid-area: 3 / 3 / 4 / 4; }
+#story-preview { grid-area: 3 / 2 / 4 / 4; }
+#nude-bottom-box { grid-area: 4 / 1 / 5 / 2; }
+#rep-preview { grid-area: 4 / 1 / 5 / 3; }
+
+.grid-parent img{
+  width: 100%;
+}
 /* ---------- footer styling ---------- */
 
 
@@ -261,6 +287,8 @@ button {
   animation: fadeIn 0.4s;
   /* padding equals height of tabbar and topbar */
   padding: 55px 0;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* ---------- logo styling ---------- */
