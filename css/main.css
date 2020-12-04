@@ -96,21 +96,47 @@ button {
 
 .grid-parent {
  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 25% 25% 25% 25%;
-  gap: 0px 0px;
-  width: 100%;
+ grid-template-columns: auto auto auto;
+ grid-template-rows: auto auto auto auto;
 }
-#nude-box { grid-area: 1 / 3 / 2 / 4; }
-#jewl-preview { grid-area: 1 / 2 / 2 / 4; }
-#beige-box { grid-area: 2 / 1 / 3 / 2; }
-#workshop-preview { grid-area: 2 / 1 / 3 / 3; }
-#brown-box { grid-area: 3 / 3 / 4 / 4; }
-#story-preview { grid-area: 3 / 2 / 4 / 4; }
-#nude-bottom-box { grid-area: 4 / 1 / 5 / 2; }
-#rep-preview { grid-area: 4 / 1 / 5 / 3; }
+#nude-box { 
+  grid-area: 1 / 3 / 2 / 4; 
+  z-index: -10; 
+  width: 70%;
+}
+#jewl-preview { 
+  grid-area: 1 / 2 / 2 / 4; 
+  z-index: 100;}
+#beige-box { 
+  grid-area: 2 / 1 / 3 / 2; 
+  z-index: -10;
+  width: 70%;}
+#workshop-preview { 
+  grid-area: 2 / 1 / 3 / 3; 
+  z-index: 100;}
+#brown-box { 
+  grid-area: 3 / 3 / 4 / 4; 
+  z-index: -10;
+  width: 70%;}
+#story-preview { 
+  grid-area: 3 / 2 / 4 / 4; 
+  z-index: 100;}
+#nude-bottom-box { 
+  grid-area: 4 / 1 / 5 / 2; 
+  z-index: -10;
+  width: 70%;}
+#rep-preview { grid-area: 4 / 1 / 5 / 3; 
+  z-index: 100;}
 
-.grid-parent img{
+#jewl-text{ grid-area: 1 / 1 / 2 / 2;}
+#workshop-text{
+  grid-area: 2 / 3 / 3 / 4;
+  height: 300px;
+}
+#story-text{ grid-area: 3 / 1 / 4 / 2;}
+#rep-text{ grid-area: 4 / 3 / 5 / 4;}
+
+.grid-parent img, .grid-parent p{
   width: 100%;
 }
 /* ---------- footer styling ---------- */
