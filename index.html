@@ -19,7 +19,7 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
   <!---->
 
@@ -29,6 +29,10 @@
 
   <!-- Skin CSS file (styling of UI - buttons, caption, etc.) -->
   <link rel="stylesheet" href="default-skin/default-skin.css">
+  <!---->
+
+  <!---- email signup form css ---->
+  <link rel="stylesheet" href="css/email.css">
   <!---->
 </head>
 
@@ -43,7 +47,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+      <div class="navbar-nav button-nav-footer">
 
         <a class="nav-link" href="#smykker">SMYKKER</a>
         <a class="nav-link" href="#workshop">WORKSHOP</a>
@@ -57,75 +61,85 @@
   <!----- home page ----->
   <section id="home" class="page">
     <article class="front-page-intro">
-      <h1>Guldsmed Henrik Saugbjerg</h1>
-      <p>En kortfattet men vigtig beskrivelse af Henrik, hans virksomhed, workshops og værdier. Lorem ipsum dolor sit
+      <h1 class="heading1"><span class="highlight"> Guldsmed Henrik Saugbjerg</span></h1>
+      <p class="body2">En kortfattet men vigtig beskrivelse af Henrik, hans virksomhed, workshops og værdier. Lorem
+        ipsum dolor sit
         amet,
         consectetur adipiscing elit. Donec dapibus vehicula eros, ac molestie enim mollis ut. Maecenas rhoncus
         pellentesque
         porttitor. Vivamus ac lectus feugiat, molestie purus non, aliquam metus.</p>
     </article>
-<br>
+    <br>
     <div class="grid-parent">
-      <div id="jewl-text">
-        <h2>Håndlavede smykker</h2>
-        <p>
+      <div id="jewl-text" class="front-text-left">
+        <h2 class="heading3">Håndlavede smykker</h2>
+        <p class="body2">
           Her står der en masse om hans håndlavede smykker Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Donec dapibus
           vehicula eros, ac molestie enim mollis ut.
         </p>
+        <div class="bt-container">
+          <a href="#smykker" class="button">Se smykker</a>
+        </div>
       </div>
       <div id="nude-box">
-        <img src="/img/nude-box.jpg" alt="">
+        <img class="color-box" src="/img/nude-box.jpg" alt="">
       </div>
       <div id="jewl-preview">
-        <img src="/img/diamantoeringe.jpg" alt="" >
+        <img src="/img/diamantoeringe.jpg" alt="">
       </div>
-      <div id="workshop-text">
-        <h2>Workshop</h2>
-        <p>
+      <div id="workshop-text" class="front-text-right">
+        <h2 class="heading3">Workshop</h2>
+        <p class="body2">
+          Her står der en masse om hans håndlavede smykker Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec dapibus
+          vehicula eros, ac molestie enim mollis ut.
+        </p>
+        <div class="bt-container">
+          <a href="#workshop" class="button">Læs mere...</a>
+        </div>
+      </div>
+
+      <div id="beige-box">
+        <img class="color-box" src="/img/beige-box.jpg" alt="">
+      </div>
+      <div id="workshop-preview">
+        <img src="/img/hyggestue.jpg" alt="">
+      </div>
+      <div id="story-text" class="front-text-left">
+        <h2 class="heading3">Min historie</h2>
+        <p class="body2">
+          Her står der en masse om hans håndlavede smykker Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec dapibus
+          vehicula eros, ac molestie enim mollis ut.
+        </p>
+        <div class="bt-container">
+          <a href="#historie" class="button">Læs mere...</a>
+        </div>
+      </div>
+
+      <div id="brown-box">
+        <img class="color-box" src="/img/brown-box.jpg" alt="">
+      </div>
+      <div id="story-preview">
+        <img src="/img/arbejdsplads.jpg" alt="">
+      </div>
+      <div id="rep-text" class="front-text-right">
+        <h2>Reperation</h2>
+        <p class="body2">
           Her står der en masse om hans håndlavede smykker Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Donec dapibus
           vehicula eros, ac molestie enim mollis ut.
         </p>
       </div>
-     
-        <div id="beige-box">
-          <img src="/img/beige-box.jpg" alt="">
-        </div>
-        <div id="workshop-preview">
-          <img src="/img/hyggestue.jpg" alt="">
-        </div>
-        <div id="story-text">
-          <h2>Min historie</h2>
-          <p>
-            Her står der en masse om hans håndlavede smykker Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec dapibus
-            vehicula eros, ac molestie enim mollis ut.
-          </p>
-        </div>
-       
-          <div id="brown-box">
-            <img src="/img/brown-box.jpg" alt="">
-          </div>
-          <div id="story-preview">
-            <img src="/img/arbejdsplads.jpg" alt="">
-          </div>
-          <div id="rep-text">
-            <h2>Reperation</h2>
-            <p>
-              Her står der en masse om hans håndlavede smykker Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Donec dapibus
-              vehicula eros, ac molestie enim mollis ut.
-            </p>
-          </div>
-       
-            <div id="nude-bottom-box">
-              <img src="/img/beige-box.jpg" alt="">
-            </div>
-            <div id="rep-preview">
-              <img src="/img/diamantringe.jpg" alt="">
-            </div>
-        
+
+      <div id="nude-bottom-box">
+        <img class="color-box" src="/img/beige-box.jpg" alt="">
+      </div>
+      <div id="rep-preview">
+        <img src="/img/diamantringe.jpg" alt="">
+      </div>
+
 
   </section>
   <!----- home page END ----->
@@ -159,56 +173,93 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <h6>Find os</h6>
-            <p class="text-justify">
-              Mandag - Torsdag: 8.00-16.00
+            <h6 class="footer-headings">Find os</h6>
+            <ul class="footer-links">
+              <li>Mandag - Torsdag: 8.00-16.00</li>
+              <li>Fredag - Lørdag: 8.00-12.00</li>
+              <li>Søndag og helligdage: Lukket</li>
               <br>
-              Fredag - Lørdag: 8.00-12.00
-              <br>
-              Søndag og helligdage: Lukket
+              <li>Frederiksgade 74G</li>
+              <li>8000 Aarhus C</li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 class="footer-headings">Kontakt</h6>
+            <ul class="footer-links">
+
+              <li>+45 86 75 13 14</li>
+              <li>henrik@saugbjerg-guld.dk</li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 class="footer-headings">Nyhedsbrev</h6>
+
+            <p class="footer-links footer-body">
+              Tilmeld dig til vores vores nyhedsbrev og bliv opdateret på nyeste webshops og kollektioner
+            </p>
+
+
+            <!-- BEGIN: Signup Form Popup Code from Benchmark Email Ver 4.0  -->
+
+
+            <div id="signupFormContainer_4E29B">
+              <div id="signupFormContent_4E29B">
+                <div class="formbox-editor_4E29B" border-radius:0px; box-sizing: border-box; top: 0px;">
+                  <div id="formbox_screen_subscribe_4E29B" style="display:block;" name="frmLB_4E29B">
+                    <input type=hidden name=token_4E29B id=token_4E29B
+                      value="mFcQnoBFKMTLcMddRH6S0sxpSu0%2BSv5K8cb1mET8pEnJCvsCOmfctA%3D%3D" />
+                    <input type=hidden name=successurl_4E29B id=successurl_4E29B
+                      value="http://lb.benchmarkemail.com//Code/ThankYouOptin?&language=" />
+                    <input type=hidden name=errorurl_4E29B id=errorurl_4E29B
+                      value="http://lb.benchmarkemail.com//Code/Error" />
+                    <fieldset class="formbox-field_4E29B"><input type=text placeholder="Email *"
+                        class="formbox-field_4E29B text-placeholder" onfocus="javascript:focusPlaceHolder(this);"
+                        onblur="javascript:blurPlaceHolder(this);" id="fldemail_4E29B" name="fldemail_4E29B"
+                        maxlength=100 />
+                    </fieldset>
+                    <fieldset style="text-align:center;">
+                      <div id="btnSubmit_4E29B" onClick="javascript:return submit_4E29BClick();"
+                        style="word-break: break-all; box-sizing: border-box; text-align:center; display: inline-block;padding-left: 15px; padding-right: 15px;padding-top: 15px; padding-bottom: 15px;background-color:rgb(255, 255, 255); border: rgb(72, 69, 58) solid 1px; border-radius: 1px;font-family :Helvetica, Arial, sans-serif; font-size: 14px;color: rgb(255, 255, 255); line-height: 1; letter-spacing:1pxpx;"
+                        class="formbox-button_4E29B">Subscribe</div>
+                    </fieldset>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+
+            <!-- END: Signup Form Popup Code from Benchmark Email Ver 4.0  -->
+
+
+          </div>
+        </div>
+        <hr>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+              Henrik Saugbjerg. CVR 25787897
             </p>
           </div>
 
-          <div class="col-xs-6 col-md-3">
-            <h6>Kontakt</h6>
-            <ul class="footer-links">
-              <li>Frederiksgade 74G</li>
-              <li>8000 Aarhus C</li>
-              <li>+45 86 75 13 14</li>
-              <li>henrik@saugbjerg-guld.dk</li>
-
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Nyhedsbrev</h6>
-            <ul class="footer-links">
-              <p>
-                Bliv opdateret på nyeste webshops og kollektioner
-              </p>
-            </ul>
-          </div>
-          <hr>
         </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                Henrik Saugbjerg. CVR 25787897
-              </p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      </div>
     </footer>
 
   </section>
@@ -225,6 +276,8 @@
     crossorigin="anonymous"></script>
   <!---->
 
+
+
   <!---- photoswipe  ---->
   <!-- Core JS file -->
   <script src="js/photoswipe.min.js"></script>
@@ -235,6 +288,12 @@
 
   <!-- UI JS file -->
   <script src="js/photoswipe-fire.js"></script>
+  <!---->
+
+
+  <!-- email signup -->
+
+  <script src="js/email.js"></script>
   <!---->
 
 

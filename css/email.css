@@ -1,0 +1,204 @@
+           .formbox-editor_4E29B fieldset {
+                border: none;
+                margin: 0;
+                padding: 0px;
+                position: relative;
+              }
+
+              .formbox-editor_4E29B fieldset>input,
+              .formbox-editor_4E29B fieldset>textarea,
+              .formbox-editable-field_4E29B {
+                margin: 10px 0;
+                outline: none;
+              }
+
+              .spacer-block_4E29B {
+                min-height: 20px;
+                padding: 10px 0;
+                position: relative;
+              }
+
+              .spacer-block-line_4E29B {
+                position: absolute;
+                top: 50%;
+                left: 40px;
+                right: 40px;
+                display: none;
+                border-top-style: solid;
+              }
+
+              .formbox-editor_4E29B {
+                margin: 0 auto;
+                padding: 0;
+                text-align: left;
+                width: 100%;
+                box-sizing: border-box;
+              }
+
+              #formbox_screen_subscribe_4E29B,
+              #formbox_screen_success_4E29B {
+                padding-bottom: 10px;
+              }
+
+              .formbox-title_4E29B,
+              .formbox-text-field_4E29B {
+                margin-bottom: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                font-size: 14px;
+              }
+
+              .formbox-title_4E29B a,
+              .formbox-text-field_4E29B a {
+                text-decoration: none;
+              }
+
+              .formbox-title_4E29B p,
+              .formbox-text-field_4E29B p {
+                margin: 0;
+                margin-bottom: 10px;
+                padding: 0;
+                word-break: break-word;
+              }
+
+              label.formbox-field-label_4E29B {
+                font-family: Helvetica, Arial, sans-serif;
+                display: block;
+                margin: 10px 0 0;
+                padding: 0;
+                font-size: 14px;
+                text-align: left;
+                line-height: 100%;
+                color: #000000;
+              }
+
+              label.formbox-label-wrap_4E29B {
+                font-family: Arial, Helvetica, sans-serif;
+                display: block;
+                margin: 10px 0 0;
+                padding: 0;
+                font-size: 14px;
+                line-height: 100%;
+                padding-left: 15px;
+                text-indent: -15px;
+                font-style: italic;
+                color: #000000;
+              }
+
+              label.formbox-label-wrap_4E29B:last-of-type {
+                margin-bottom: 10px;
+              }
+
+              label.formbox-label-wrap_4E29B input[type=checkbox],
+              label.formbox-label-wrap_4E29B input[type=radio] {
+                width: 13px;
+                height: 13px;
+                padding: 0;
+                margin: 0;
+                margin-right: 5px;
+                vertical-align: bottom;
+                position: relative;
+                top: -1px;
+              }
+
+              select.formbox-field_4E29B {
+                background-color: #000000;
+                border: 1px solid #48453a;
+                border-radius: 0px;
+                box-sizing: border-box;
+                background-color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                width: 100%;
+                margin: 10px 0;
+                height: auto;
+                padding: 2px 0px;
+              }
+
+              input.formbox-field_4E29B {
+                color: #000000;
+                background-color: #ffffff;
+                border: 1px solid #48453a;
+                border-radius: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                box-sizing: border-box;
+                padding: 5px 10px 5px 15px;
+                width: 100%;
+              }
+
+              input.formbox-field_4E29B.text-placeholder {
+                color: #c4c4c4;
+                font-weight: normal;
+                font-style: normal;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .formbox-field_4E29B::-webkit-input-placeholder {
+                color: #c4c4c4;
+                font-weight: normal;
+                font-style: normal;
+                opacity: 1;
+              }
+
+              .formbox-field_4E29B::-moz-placeholder {
+                color: #c4c4c4;
+                font-weight: normal;
+                font-style: normal;
+                opacity: 1;
+              }
+
+              .formbox-field_4E29B:-ms-input-placeholder {
+                color: #c4c4c4;
+                font-weight: normal;
+                font-style: normal;
+                opacity: 1;
+              }
+
+              .formbox-button_4E29B {
+                line-height: 100%;
+                cursor: pointer;
+                margin: 10px 0;
+                color: #000000!important;
+            
+              }
+
+              .formbox-button_4E29B:hover {
+                background-color: #ffffff !important;
+              }
+
+              .formbox-button_4E29B:active {
+                background-color: #ebebeb !important;
+              }
+
+              #popupFormLoader_4E29B {
+                display: none;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                background-image: url(https://benchmarkemail.com/images/popup-builder/loadingicon.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-color: rgb(255, 255, 255);
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 100%;
+                -webkit-animation-name: spin;
+                -webkit-animation-duration: 800ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spin;
+                -moz-animation-duration: 800ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spin;
+                -ms-animation-duration: 800ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+                animation-name: spin;
+                animation-duration: 800ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+              }
