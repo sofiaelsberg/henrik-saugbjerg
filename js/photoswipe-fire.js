@@ -14,8 +14,6 @@ function getImages() {
             console.log(_productImages);
             console.log(images);
             appendImage(_productImages.acf);
-
-
         })
 }
 
