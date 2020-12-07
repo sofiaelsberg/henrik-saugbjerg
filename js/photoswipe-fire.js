@@ -1,83 +1,53 @@
+"use strict";
+
+// Global variable
+let _productImages = [];
+
+// Fetch data from datasource (wordpress)
+function getImages() {
+    fetch('http://henrik-saugbjerg.sofiaelsberg.com/wp-json/wp/v2/posts')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (images) {
+            _productImages = images;
+            console.log(_productImages);
+            console.log(images);
+            appendImage(_productImages.acf);
 
 
+        })
+}
 
 
+// Appends json data fra to DOM
 
-function appendImageSlider(data) {
+function appendImage(images) {
     let htmlTemplate = "";
+    for (let image in images) {
+        console.log(image);
+        htmlTemplate += /*html*/
+            '<article>' +
+            '<img src="' + image.acf.image1 + '">' +
+            '</article>';
+    }
+    document.querySelector("#smykker").innerHTML = htmlTemplate;
 
-    htmlTemplate += /*html*/ `
-            <!--Root element of PhotoSwipe.Must have class pswp.-->
-                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-                    <!-- Background of PhotoSwipe.
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-                    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-                        <!-- Container that holds slides.
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-                            <div class="pswp__item"></div>
-                            <div class="pswp__item"></div>
-                            <div class="pswp__item"></div>
-                        </div>
-
-                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-                            <div class="pswp__top-bar">
-
-                                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                                    <div class="pswp__preloader__icn">
-                                        <div class="pswp__preloader__cut">
-                                            <div class="pswp__preloader__donut"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                <div class="pswp__share-tooltip"></div>
-                            </div>
-
-                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                            </button>
-
-                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                            </button>
-
-                            <div class="pswp__caption">
-                                <div class="pswp__caption__center"></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-                `
-    document.querySelector("#smykker").innerHTML += htmlTemplate;
 
 };
 
-appendImageSlider()
+// Returns the source URL of the featured image of given post
+// function getFeaturedImageUrl(post) {
+//     let imageUrl = "";
+//     if (post._embedded['wp:featuredmedia']) {
+//         imageUrl = post._embedded['wp:featuredmedia'][0].source_url;
+//     }
+//     return imageUrl;
+
+// }
+
+console.log(_productImages);
+getImages();
+
 
 console.log('hallo');
