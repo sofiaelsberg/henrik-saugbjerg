@@ -186,18 +186,20 @@ line-height: 1.5em;
 
 /* ---------- navbar styling START ---------- */
 .tabbar {
-  background-color: var(--nude);
+  background-color: #FFF!important;
 }
 
 /* Style the links inside the navigation bar */
 .tabbar a {
  opacity: 100%;
-  color: var(--text-color-light);
+  color: #000!important;
   font-size: 12px;
   letter-spacing: .5px;
   text-transform: uppercase;
   font-weight: 400;
 }
+
+
 
 
 /* Change the color of links on hover */
@@ -419,7 +421,7 @@ line-height: 1.5em;
   background: var(--light-grey);
   animation: fadeIn 0.4s;
   /* padding equals height of tabbar and topbar */
-  padding: 55px 0;
+  /* padding: 55px 0; */
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -433,6 +435,20 @@ line-height: 1.5em;
 
 
 /* ---------- front page styling ---------- */
+
+.home-head {
+  height: 30px;
+  background-color: var(--beige);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 300;
+  color: #FFF;
+ 
+}
+
+.home-head p {
+ padding-top: 5px;
+}
 
 /* -- grid layout -- */
 .front-page-intro {
