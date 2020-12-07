@@ -13,39 +13,64 @@ function getImages() {
             _productImages = images;
             console.log(_productImages);
             console.log(images);
-            appendImage(_productImages.acf);
+            appendImage(_productImages);
         })
 }
 
 
 // Appends json data fra to DOM
 
-function appendImage(images) {
+function appendImage(postData) {
+    console.log(postData);
+    let images = Object.values(postData[0].acf);
+    console.log(postData);
+
     let htmlTemplate = "";
-    for (let image in images) {
-        console.log(image);
+
+    for (let image of images) {
+        console.log(image.url);
         htmlTemplate += /*html*/
-            '<article>' +
-            '<img src="' + image.acf.image1 + '">' +
-            '</article>';
+            `<article>
+        <img src="${image.url}">
+        </article>`;
     }
-    document.querySelector("#smykker").innerHTML = htmlTemplate;
-
-
+    document.querySelector("#smykkeImage").innerHTML = htmlTemplate;
 };
 
-// Returns the source URL of the featured image of given post
-// function getFeaturedImageUrl(post) {
-//     let imageUrl = "";
-//     if (post._embedded['wp:featuredmedia']) {
-//         imageUrl = post._embedded['wp:featuredmedia'][0].source_url;
-//     }
-//     return imageUrl;
-
-// }
-
-console.log(_productImages);
-getImages();
 
 
 console.log('hallo');
+
+function initGallery() {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+        {
+            src: 'https://placekitten.com/600/400',
+            w: 600,
+            h: 400
+        },
+        {
+            src: 'https://placekitten.com/1200/900',
+            w: 1200,
+            h: 900
+        }
+    ];
+
+    // define options (if needed)
+    var options = {
+        // optionName: 'option value'
+        // for example:
+        index: 0 // start at first slide
+    };
+
+    // Initializes and opens PhotoSwipe
+    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+}
+
+console.log(_productImages);
+getImages();
+initGallery();
+
