@@ -994,7 +994,7 @@ iframe.wait-autoplay {
   word-wrap: break-word;
 }
 
-.grid-container>a img {
+.grid-container>.grid-item img {
   width: 100%;
   height: auto;
 }
