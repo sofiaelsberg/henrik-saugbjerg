@@ -24,7 +24,7 @@ function appendImage(data) {
     for (let image of images) {
         console.log(image);
         htmlTemplate += /*html*/`
-        <div class="overlay-container">
+        <div class="grid-item overlay-container">
       <a href="${image.url}" class="glightbox product-image" data-type="image" data-glightbox="description: ${image.description}">
         <img src="${image.url}">
         <div class="overlay">

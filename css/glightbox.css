@@ -988,7 +988,7 @@ iframe.wait-autoplay {
   }
 }
 
-.grid-container>a {
+.grid-container>.grid-item {
   text-align: center;
   padding: 10px;
   word-wrap: break-word;
