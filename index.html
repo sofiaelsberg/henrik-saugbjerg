@@ -23,8 +23,14 @@
     rel="stylesheet">
   <!---->
 
+  <!---- workshop css ---->
+  <link rel="stylesheet" href="css/frontpage.css">
+
   <!---- gallery css ---->
   <link rel="stylesheet" href="css/glightbox.css">
+
+  <!---- workshop css ---->
+  <link rel="stylesheet" href="css/workshop.css">
 
   <!---- email signup form css ---->
   <link rel="stylesheet" href="css/email.css">
@@ -163,19 +169,86 @@
 
   <!----- workshop page ----->
   <section id="workshop" class="page">
-    <h1>workshop</h1>
+    <h1 class="heading1"><span class="highlight">Workshop</span></h1>
+    <article class="info-box">
+      <div id="oplysninger">
+        <h3 class="title-caption">Underviser</h3>
+        <p class="caption">Henrik</p>
+        <h3 class="title-caption">Lokation</h3>
+        <p class="caption">Århus C</p>
+        <h3 class="title-caption"">Hvor ofte?</h3>
+        <p class=" caption">12 gange / 36 lekt.</p>
+          <h3 class="title-caption">Pris</h3>
+          <p class="caption">DKK 1.475 ,-</p>
+          <h3 class="title-caption">Budget</h3>
+      </div>
+      <div id="smykker-til-ide">
+        <h2 class="heading3">Fra idé til færdigt smykke</h2>
+        <p class="body1">En kortfattet men vigtig beskrivelse af Henrik, hans virksomhed, workshops og værdier. Lorem
+          ipsum dolor sit
+          amet, consectetur adipiscing elit. Donec dapibus vehicula eros, ac molestie enim mollis ut. Maecenas rhoncus
+          pellentesque porttitor. Vivamus ac lectus feugiat, molestie purus non, aliquam metus.</p><br>
+        <button id="tilmeld">TILMELD DIG HER</button>
+      </div>
+    </article>
+
+
+    <article class="images-container">
+
+      <div class="billeder">
+        <div id="arbejde"><img src="img/arbejde-w.JPG" alt=""></div>
+        <div id="bord"><img src="img/bord.JPG" alt=""></div>
+        <div id="valse"><img src="img/valse.JPG" alt=""></div>
+      </div>
+
+      <div class="info-text">
+        <h1>Hvad lærer jeg?</h1>
+        <p>Du vil igennem dette forløb lærer om lodning, smelting, savning og håndværket af smykker. Du vil starte
+          forløbet
+          med at lærer grund teknikerne for at kunne udvikle et smykke.
+          Du vil herefter kunne udvikle en ring, armbånd, halskæde eller øreringe efter dit eget design eller et design
+          du
+          har fundet på nettet.
+
+          Jeg vil være der til at guide, rådgive og hjælpe dig med udviklingen af dit smykke og hjælpe dig på vej efter
+          et
+          smykke på et niveau, hvor du kan få en succes oplevelse og få dit første hjemmelavet smykke med hjem.</p>
+        <h1>hvad skal jeg have med?</h1>
+        <p>Det eneste du skal medbringe til kurset er dig selv, og 360kr. til de fælles udgifter - betales med mobilpay.
+          Jeg
+          stiller alle maskiner og materialer til rådighed og en fagudlært underviser.
+        </p>
+
+        <h1>Andet?</h1>
+        <p>Alle smykker der bliver produceret på kurset laves i sølv. Ønsker du at lave smykker med perler eller sten,
+          kan
+          det købes på kurset, men da vi ikke kan have alle farver og forme liggende anbefaler vi at i selv medbringer.
+        </p>
+      </div>
+
+    </article>
+
+
+    <section class="citat">
+      <p id="citat-text">“Henrik er en dygtig underviser, der giver sig tid til at hjælpe og udfordre ens videre
+        udvikling.
+        Hans passion for for faget, smitter af på ens egen læring og interesse for faget. Henrik kender hurtigt ens
+        faglige
+        niveaue, og kan guide en i den rigtige retning for en succes oplevelse”</p>
+
+    </section>
 
   </section>
   <!----- workshop page END ----->
 
   <!----- historie page ----->
   <section id="historie" class="page">
-   
+
     <article>
-    <h1 class="heading1"> <span class="highlight">Hvem er jeg?</span></h1>
-    <p class="body2">Jeg er Henrik Saugbjerg, en kreativ håndværker med 30 års erfaring som guldsmed. 
-      Jeg brænder for godt håndværk og tror ikke på masseproduktion - det skal være unikt. 
-    </p>
+      <h1 class="heading1"> <span class="highlight">Hvem er jeg?</span></h1>
+      <p class="body2">Jeg er Henrik Saugbjerg, en kreativ håndværker med 30 års erfaring som guldsmed.
+        Jeg brænder for godt håndværk og tror ikke på masseproduktion - det skal være unikt.
+      </p>
     </article>
     <br>
 
@@ -188,8 +261,8 @@
     <div class="flexhistorie">
       <div id="flextekst">
         <h2 class="heading3">Ikke bare endnu en købmand</h2>
-        <p class="body2">Det bedste jeg ved at se dig gå med mit smykke, der er ikke nogen bedre følelse. 
-          Jeg fokuserer på kunden - det enkelte individ - og hvad der passer til deres behov. 
+        <p class="body2">Det bedste jeg ved at se dig gå med mit smykke, der er ikke nogen bedre følelse.
+          Jeg fokuserer på kunden - det enkelte individ - og hvad der passer til deres behov.
           Det giver et mere særligt og værdifuldt smykke.</p>
       </div>
 
@@ -200,12 +273,13 @@
 
     <div class="beigebanner" id="qualitytext">
       <h2 class="heading3">Kærlighed til kvalitet</h2>
-      <p class="body2">Min stil er inspireret af 1970’erne - jeg elsker deres simplicitet, og den ro og stil der er over smykkerne. 
-        Mine designs er klassiske og tidsløse, men følger samtidig altid tidens trends. 
+      <p class="body2">Min stil er inspireret af 1970’erne - jeg elsker deres simplicitet, og den ro og stil der er over
+        smykkerne.
+        Mine designs er klassiske og tidsløse, men følger samtidig altid tidens trends.
         Jeg har en kærlighed for teksturer, diamanter og specialiserer mig i guldsmykker. Det er mit hjertebarn.</p>
-      </div>
+    </div>
 
-    
+
     <div id="signature">
       <p class="body2">Velkommen til</p>
       <img src="img/underskrift.png" alt="Henrik Saugbjergs underskrift">
