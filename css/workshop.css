@@ -1,4 +1,4 @@
-.info-box {
+.info-box, .images-container {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
@@ -50,7 +50,7 @@ margin-bottom: 0;
 #smykker-til-ide {
     width: 60%;
     line-height: 30px;
-    padding-right: 5%;
+    padding: 50px;
     background-color: #E4E3D5;
 display: flex;
 flex-direction: column;
@@ -71,39 +71,47 @@ flex-direction: column;
 /* ------ Styling af infobox slut --------*/
 
 /* Styling af Billerne og tekst */
+
+.images-container {
+    height: 100%;
+    width: 100%;
+
+  
+}
+
 .billeder {
+    display: flex;
+    flex-direction: column;
     align-self: flex-start;
 }
 
 .billeder img {
     width: 100%;
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.images-container {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    flex-direction: row;
+#valse img {
+    padding-bottom: 0px;
 }
+
+
 
 .images-container .billeder {
-    width: 20%;
-    padding-left: 50px;
-    padding-top: 2%;
-    margin-left: 200px;
+    width: 30%;
 }
 
-.images-container .info-text {
+.info-text {
     background-color: #E4E3D5;
     text-align: left;
     line-height: 20px;
     font-size: 20px;
-    width: 40%;
-    margin-top: 70px;
-    padding-bottom: 150px;
+    width: 60%;
+    padding: 50px;
     margin-left: 60px;
+}
+
+.images-container {
+    margin-right: 300px;
 }
 
 /*-------- Styling af Billerne og tekst slut --------*/
@@ -116,6 +124,8 @@ flex-direction: column;
     padding-top: 70px;
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #citat-text {
