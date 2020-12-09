@@ -1,0 +1,75 @@
+/* ---------- historie page styling ---------- */
+
+
+#historie{
+  text-align: center;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 50px;
+}
+
+#historie p{
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  margin-top: 30px;
+  
+}
+
+.beigebanner{
+  background-color: #EFEFE7;
+  height: 350px;
+}
+
+#portraet{
+  width: 25%;
+  margin-top: -25px;
+  margin-right: 30px;
+}
+
+#haend{
+  width: 50%;
+  margin-top: -30px;
+  margin-left: 40px;
+}
+
+
+/*Flexbox*/
+.flexhistorie{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#flextekst{
+  width: 70%;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+#flexcitat{
+  width: 70%;
+  background-color: #484539;
+  color: white;
+  padding: 100px 50px 100px 50px;
+  margin-right: 150px;
+}
+
+
+#qualitytext{
+  padding-top: 80px;
+}
+
+
+#signature img {
+  width: 25%;
+}
+
+#signature p{
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+
+/* ---------- historie page SLUT ---------- */

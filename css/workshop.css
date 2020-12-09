@@ -1,13 +1,18 @@
+#workshop {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 .info-box, .images-container {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
 }
 
 .info-flex-container{
-padding-bottom: 50px;
+    padding-bottom: 50px;
     padding-top: 50px;
 }
 
@@ -60,11 +65,8 @@ flex-direction: column;
 /* styling af knap */
 #tilmeld {
     background-color: #484539;
-    border: none;
     color: white;
-    padding: 10px;
-    font-size: 10px;
-  width: 150px;
+  width: 200px;
   margin-top: auto;
 }
 
@@ -74,20 +76,20 @@ flex-direction: column;
 
 .images-container {
     height: 100%;
-    width: 100%;
-
-  
+    
 }
 
 .billeder {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+     width: 70%;
 }
 
 .billeder img {
     width: 100%;
     padding-bottom: 50px;
+    padding-right: 50px;
 }
 
 #valse img {
@@ -95,42 +97,44 @@ flex-direction: column;
 }
 
 
-
-.images-container .billeder {
-    width: 30%;
-}
-
 .info-text {
     background-color: #E4E3D5;
     text-align: left;
     line-height: 20px;
     font-size: 20px;
-    width: 60%;
+    width: 100%;
     padding: 50px;
-    margin-left: 60px;
 }
 
-.images-container {
-    margin-right: 300px;
+.info-text p {
+    margin-bottom: 40px;
 }
+
+.info-text>p:last-of-type{
+font-size: 14px;
+margin-bottom: 0;
+}
+
+
+
 
 /*-------- Styling af Billerne og tekst slut --------*/
 
 
 /* styling af citat sectionen */
 .citat {
-    height: 150px;
     background-color: #E4E3D5;
-    padding-top: 70px;
+    text-align: center;
+    font-style: italic;
     margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-bottom: 100px;
+    padding: 60px 400px
 }
 
 #citat-text {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-right: auto;
+    
+
 }
 
 /*-------- styling af citat sectionen slut --------*/
