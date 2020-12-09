@@ -994,11 +994,13 @@ iframe.wait-autoplay {
   text-align: center;
   padding: 10px;
   word-wrap: break-word;
+   
 }
 
 .grid-container>.grid-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+ object-fit: cover;
 }
 
 /* ---------- :hover overlay styling ---------- */
