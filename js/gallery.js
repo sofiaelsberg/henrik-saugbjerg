@@ -25,19 +25,15 @@ function appendImage(data) {
         console.log(image);
         htmlTemplate += /*html*/`
         <div class="grid-item overlay-container">
-            <div>
-      <a href="${image.url}" class="glightbox product-image" data-type="image" data-glightbox="description: ${image.description}">
-        <img src="${image.url}">
-    </div>
-        <div class="overlay">
-            <div class="text-overlay">
-         ${image.description}
-             </div>
-    </div>
-      </a>
-    </div>
-
-      
+            <a href="${image.url}" class="glightbox product-image" data-type="image" data-glightbox="description: ${image.description}">
+                <img src="${image.url}">
+                <div class="overlay">
+                    <div class="text-overlay">
+                        ${image.description}
+                    </div>
+                </div>
+             </a>
+        </div>
     `;
     }
 

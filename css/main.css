@@ -438,8 +438,7 @@ font-size: 12px;
   min-height: calc(100vh - 110px);
   background: var(--light-grey);
   animation: fadeIn 0.4s;
-  /* padding equals height of tabbar and topbar */
-  /* padding: 55px 0; */
+ padding-bottom: 100px;
   margin-left: 50px;
   margin-right: 50px;
 }

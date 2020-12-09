@@ -14,6 +14,16 @@
  padding-top: 5px;
 }
 
+.vl {
+  border-left: 1px solid lightgray;
+  height: 1800px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 350px;
+  z-index: -999;
+}
+
 /* -- grid layout -- */
 .front-page-intro {
   margin: 100px;
@@ -137,7 +147,7 @@ max-width: 100%;
 }
 
 .front-text-right{
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 30px;
   text-align: left;
   align-self: center;
 }
