@@ -29,7 +29,10 @@ function appendImage(data) {
                 <img src="${image.url}">
                 <div class="overlay">
                     <div class="text-overlay">
-                        ${image.description}
+                        <div id="price-caption">
+                            ${image.caption}
+                        </div>
+                            ${image.description}
                     </div>
                 </div>
              </a>

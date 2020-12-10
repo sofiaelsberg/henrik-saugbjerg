@@ -992,11 +992,11 @@ iframe.wait-autoplay {
 
 .grid-container>.grid-item {
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
   word-wrap: break-word;
   width: 250px;
   height: 250px;
-  
+  margin-bottom: 45px;
   
 }
 
@@ -1004,8 +1004,8 @@ iframe.wait-autoplay {
   width: 250px;
   height: 250px;
  object-fit: cover;
- padding-bottom: 35px;
 
+ 
 }
 
 /* ---------- :hover overlay styling ---------- */
@@ -1031,7 +1031,8 @@ iframe.wait-autoplay {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: var(--beige);
+  background-color: var(--brown);
+  padding: 10px;
 }
 
 .overlay-container:hover .overlay {
@@ -1040,7 +1041,9 @@ iframe.wait-autoplay {
 
 .text-overlay {
   color: white;
-  font-size: 20px;
+  font-size: 12px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 100;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1048,4 +1051,22 @@ iframe.wait-autoplay {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+}
+
+#price-caption {
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.gallery-intro-text {
+  text-align: center;
+  margin: 50px 300px 90px 300px;
+  margin-right: 300px;
+  margin-left: 300px;
+  font-size: 12px;
+}
+
+#smykker .heading1 {
+  margin-top: 30px;
 }
