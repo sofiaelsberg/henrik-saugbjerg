@@ -23,8 +23,12 @@
     rel="stylesheet">
   <!---->
 
+
   <!---- frontpage css ---->
   <link rel="stylesheet" href="css/frontpage.css">
+
+  <!---- image coloroverlay css ---->
+  <link rel="stylesheet" href="css/image-overlays.css">
 
   <!---- gallery css ---->
   <link rel="stylesheet" href="css/glightbox.css">
@@ -51,7 +55,9 @@
     <p>Guldsmed i hjertet af Aarhus</p>
   </section>
   <nav class="navbar navbar-expand-lg navbar-light tabbar">
-    <a class="navbar-brand" href="#home">Logo</a>
+    <a class="navbar-brand" href="#home">
+      <img src="../img/logo.png" width="150px" alt="">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -72,8 +78,8 @@
   <section id="home" class="page">
 
     <article class="front-page-intro">
-      <h1 class="heading1"><span class="highlight">Henrik Saugbjerg</span></h1>
-      <p class="body2">Guldsmed og underviser</p>
+      <h1 class="heading1"><span class="highlight">Guldsmed og smykkeworkshop</span></h1>
+
     </article>
     <br>
     <div class="vl"></div>
@@ -97,7 +103,10 @@
         <img class="color-box" src="/img/nude-box.jpg" alt="">
       </div>
       <div id="jewl-preview">
-        <img src="/img/diamantringe.jpg" alt="">
+        <div class="img-overlay-container">
+          <img src="/img/diamantringe.jpg" alt="">
+          <div class="color-overlay dark"></div>
+        </div>
       </div>
       <div id="workshop-text" class="front-text-right">
         <h2 class="heading3">Workshop</h2>
@@ -117,7 +126,10 @@
         <img class="color-box" src="/img/beige-box.jpg" alt="">
       </div>
       <div id="workshop-preview">
-        <img class="workshop-img" src="/img/udskaering.jpg" alt="">
+        <div class="img-overlay-container">
+          <img class="workshop-img" src="/img/udskaering.jpg" alt="">
+          <div class="color-overlay light"></div>
+        </div>
       </div>
       <div id="story-text" class="front-text-left">
         <h2 class="heading3">Min historie</h2>
@@ -135,7 +147,10 @@
         <img class="color-box" src="/img/brown-box.jpg" alt="">
       </div>
       <div id="story-preview">
-        <img src="/img/diamantoeringe.jpg" alt="">
+        <div class="img-overlay-container">
+          <img src="/img/diamantoeringe.jpg" alt="">
+          <div class="color-overlay dark"></div>
+        </div>
       </div>
       <div id="rep-text" class="front-text-right">
         <h2 class="heading3">Reparation</h2>
@@ -151,7 +166,11 @@
         <img class="color-box" src="/img/beige-box.jpg" alt="">
       </div>
       <div id="rep-preview">
-        <img src="/img/fire.jpg" alt="">
+        <div class="img-overlay-container">
+
+          <img src="/img/fire.jpg" alt="">
+          <div class="color-overlay light"></div>
+        </div>
       </div>
     </div>
 
@@ -188,19 +207,22 @@
         <p class="caption">Henrik</p>
         <h3 class="title-caption">Lokation</h3>
         <p class="caption">Århus C</p>
-        <h3 class="title-caption"">Hvor ofte?</h3>
+        <h3 class="title-caption">Hvor ofte?</h3>
         <p class=" caption">12 gange / 36 lekt.</p>
-          <h3 class="title-caption">Pris</h3>
-          <p class="caption">DKK 1.475 ,-</p>
-          <h3 class="title-caption">Budget</h3>
-          <p class="caption">DKK 1.000-3000 ,-</p>
+        <h3 class="title-caption">Pris</h3>
+        <p class="caption">DKK 1.475 ,-</p>
+        <h3 class="title-caption">Budget</h3>
+        <p class="caption">DKK 1.000-3000 ,-</p>
       </div>
       <div id="smykker-til-ide">
         <h2 class="heading3">Fra idé til færdigt smykke</h2>
-        <p class="body1">En kortfattet men vigtig beskrivelse af Henrik, hans virksomhed, workshops og værdier. Lorem
-          ipsum dolor sit
-          amet, consectetur adipiscing elit. Donec dapibus vehicula eros, ac molestie enim mollis ut. Maecenas rhoncus
-          pellentesque porttitor. Vivamus ac lectus feugiat, molestie purus non, aliquam metus.</p><br>
+        <p class="body1">Går du med drøm om at designe og udvikle dit eget smykke? Er du en kreativ person, der godt
+          kunne tænke sig nye
+          udfordringer? Så tilmeld dig min workshop, hvor du mere eller mindre får fri leg til at kreerer dit helt
+          unikke smykke.
+        <p class="body1">
+          Vil du vide mere? Så læs nedenfor eller tilmeld dig mit nyhedsbrev.</p><br>
+        </p>
         <a href="https://www.fof.dk/da/aarhus/kurser/kreative-kurser/smykkekurser?filter-by=primary-teacher%3D7644"><button
             class="button-text" id="tilmeld">TILMELD DIG HER</button></a>
       </div>
@@ -210,16 +232,31 @@
     <article class="images-container">
 
       <div class="billeder">
-        <div id="arbejde"><img src="img/arbejde-w.JPG" alt=""></div>
-        <div id="bord"><img src="img/bord.JPG" alt=""></div>
-        <div class="img-last-child" id="valse"><img src="img/valse.JPG" alt=""></div>
+        <div id="arbejde">
+          <div class="img-overlay-container">
+            <img src="img/arbejde-w.JPG" alt="">
+            <div class="color-overlay extra-light"></div>
+          </div>
+        </div>
+        <div id="bord">
+          <div class="img-overlay-container">
+            <img src="img/bord.JPG" alt="">
+            <div class="color-overlay extra-light"></div>
+          </div>
+        </div>
+        <div class="img-last-child" id="valse">
+          <div class="img-overlay-container">
+            <img src="img/valse.JPG" alt="">
+            <div class="color-overlay extra-light"></div>
+          </div>
+        </div>
       </div>
 
       <div class="info-text">
         <h3 class="heading3">Hvad lærer jeg?</h3>
         <p class="body1">Du vil igennem dette forløb lærer om lodning, smelting, savning og håndværket af smykker.
-          <p />
-        <p class="body1"> Du vil starte forløbet med at lærer grund teknikerne for at kunne udvikle et smykke.
+        </p>
+        <p class="body1"> Du vil starte forløbet med at læree grund teknikerne for at kunne udvikle et smykke.
           Du vil herefter kunne udvikle en ring, armbånd, halskæde eller øreringe efter dit eget design eller et design
           du har fundet på nettet.</p>
         <p class="body1">
@@ -246,12 +283,24 @@
 
     <section>
       <div class="citat">
-        <p class="subheading2" id="citat-text">“Henrik er en dygtig underviser, der giver sig tid til at hjælpe og
+        <!-- <p class="subheading2" id="citat-text">“Henrik er en dygtig underviser, der giver sig tid til at hjælpe og
           udfordre ens videre
           udvikling.
           Hans passion for for faget, smitter af på ens egen læring og interesse for faget. Henrik kender hurtigt ens
           faglige
-          niveaue, og kan guide en i den rigtige retning for en succes oplevelse”</p>
+          niveaue, og kan guide en i den rigtige retning for en succes oplevelse”
+        </p> -->
+        <blockquote>
+          Henrik er en dygtig underviser, der giver sig tid til at hjælpe og
+          udfordre ens videre
+          udvikling.
+          Hans passion for for faget, smitter af på ens egen læring og interesse for faget. Henrik kender hurtigt ens
+          faglige
+          niveaue, og kan guide en i den rigtige retning for en succes oplevelse
+        </blockquote>
+        <p class="subheading2">
+          - Maria Ejdesgaard, kursist ved Henrik
+        </p>
       </div>
     </section>
 

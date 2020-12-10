@@ -1,32 +1,27 @@
 /* ---------- front page styling ---------- */
 
-.home-head {
-  height: 20px;
-  background-color: var(--beige);
-  text-align: center;
-  font-size: 8px;
-  font-weight: 300;
-  color: #FFF;
- 
+#home {
+  background-color: #F5F5F1;
+  margin: 0;
 }
 
-.home-head p {
- padding-top: 5px;
-}
+
+
 
 .vl {
   border-left: 1px solid lightgray;
-  height: 1800px;
+  height: 1750px;
   position: absolute;
   left: 50%;
   margin-left: -3px;
-  top: 350px;
-  z-index: -999;
+  top: 390px;
+ 
 }
 
 /* -- grid layout -- */
 .front-page-intro {
-  margin: 100px;
+  padding: 100px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -38,12 +33,14 @@
  column-gap: 1em;
  margin-right: 200px;
  margin-left: 200px;
+  background-color: #FFF;
+  padding: 50px;
 }
 
 
 #nude-box { 
   grid-area: 1 / 2 / 2 / 3; 
-  z-index: -10; 
+  z-index: 10; 
   width: 70%;
  justify-self: end;
 }
@@ -63,7 +60,7 @@
 
 #beige-box { 
   grid-area: 2 / 1 / 3 / 2; 
-  z-index: -10;
+  z-index: 10;
   width: 80%;
   justify-self: start;
 }
@@ -84,7 +81,7 @@
 
 #brown-box { 
   grid-area: 3 / 2 / 4 / 3; 
-  z-index: -10;
+  z-index: 10;
   width: 80%;
   justify-self: end;
   
@@ -106,7 +103,7 @@
 
 #nude-bottom-box { 
   grid-area: 4 / 1 / 5 / 2; 
-  z-index: -10;
+  z-index: 10;
   width: 70%;
   justify-self: start;
 }

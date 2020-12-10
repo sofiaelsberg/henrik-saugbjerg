@@ -21,6 +21,19 @@ html {
 body {
   margin: 0;
 }
+.home-head {
+  height: 20px;
+  background-color: var(--beige);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  color: #FFF;
+ 
+}
+
+.home-head p {
+ padding-top: 5px;
+}
 
 /* ---------- general styling SLUT ---------- */
 
@@ -115,11 +128,11 @@ a:hover {
     background: linear-gradient(to top,
                 transparent 5%,
                 var(--nude) 5%,
-                var(--nude) 37%,
-                transparent 37%);
-      background: linear-gradient(180deg,
+                var(--nude) 30%,
+                transparent 30%);
+      /* background: linear-gradient(180deg,
                 rgba(255,255,255,0) 50%,
-                  var(--nude) 50%);
+                  var(--nude) 50%); */
 }
 
 .heading1 {
@@ -221,16 +234,14 @@ font-size: 12px;
 
 
 /* Change the color of links on hover */
-/* .tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
-} */
+.tabbar a:hover {
+  color: var(--beige)!important;
+}
 
 /* Add a color to the active/current link */
-/* .tabbar a.active {
-  background-color: var(--brown);
-  color: black;
-} */
+.tabbar a.active {
+  color: var(--beige)!important;
+}
 
 /* ---------- navbar styling SLUT ---------- */
 
