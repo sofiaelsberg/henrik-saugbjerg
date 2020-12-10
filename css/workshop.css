@@ -122,54 +122,54 @@ margin-bottom: 0;
 
 
 /* styling af citat sectionen */
-.citat {
+.citat-container {
     background-color: #F5F5F1;
     text-align: center;
     font-style: italic;
     margin-top: 10%;
-    margin-bottom: 100px;
-    padding: 60px 400px;
-    
+    padding: 20px 400px;
 }
 
-#citat-text {
+
+
+/* #citat-text {
     margin-right: auto;
     width: 400px;
   margin: 10px auto;
-}
+} */
 
 .citat>p:last-of-type {
     font-style: normal;
     font-weight: 200!important;
     text-align: center;
     width: 400px;
-  margin: 10% auto;
+    margin: 30px auto;
 }
 
-blockquote {
+.citat {
   color: var(--brown);
   font-size: 16px;
   line-height: 1.5em;
   position: relative;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 400px;
-  margin: 10% auto;
+  margin: 30px auto;
   text-align: left;
 }
+
 blockquote:before {
   content: '\201C';
   position: absolute;
   top: 20px;
   left: -40px;
-
   font-size: 82px;
   font-style: normal;
 }
 blockquote:after {
   content: '\201C';
   position: absolute;
-  bottom: -20px;
-  right: -20px;
+  bottom: 20px;
+  right: 20px;
 
   font-size: 82px;
   font-style: normal;

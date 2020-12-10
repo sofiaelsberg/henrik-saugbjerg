@@ -5,16 +5,21 @@
   margin: 0;
 }
 
-
+/* .scroll-animation {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+} */
 
 
 .vl {
   border-left: 1px solid lightgray;
-  height: 1750px;
+  height: 1700px;
   position: absolute;
   left: 50%;
   margin-left: -3px;
-  top: 390px;
+  top: 350px;
  
 }
 
