@@ -1,6 +1,7 @@
 "use strict";
 
 
+
 (function ($) {
 
     /**
@@ -35,6 +36,7 @@ var win = $(window);
 
 var allMods = $(".module");
 
+// element is alreading the viewport we defined in above function (true), it will add the class .already-visbible
 allMods.each(function (i, el) {
     var el = $(el);
     if (el.visible(true)) {
@@ -44,6 +46,7 @@ allMods.each(function (i, el) {
 
 win.scroll(function (event) {
 
+    // adds class 'come-in' to elements - so they can fade
     allMods.each(function (i, el) {
         var el = $(el);
         if (el.visible(true)) {
